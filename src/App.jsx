@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   return (
-      <div className="app ">
+      <div className="app max-w-full" >
         <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
         <div className={"w-5/6 mx-auto "}>
           <Landing setSelectedPage={setSelectedPage} />

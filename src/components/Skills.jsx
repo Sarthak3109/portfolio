@@ -3,10 +3,16 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/js.png";
 import reactImage from "../assets/react.png";
+import mongo from "../assets/mongo.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import bootstrap from "../assets/bs.png";
 import cpp from "../assets/cpp.png";
+import express from "../assets/express.png";
+import sql from "../assets/sql.png";
+
+import python from "../assets/python.png"
+import node from "../assets/node.jpg"
 
 const Skills = () => {
   const techs = [
@@ -42,14 +48,14 @@ const Skills = () => {
     },
     {
       id: 6,
-      src: github,
-      title: "GitHub",
+      src: node,
+      title: "Node JS",
       style: "shadow-gray-400",
     },
     {
       id: 7,
-      src: bootstrap,
-      title: "Bootstrap",
+      src: express,
+      title: "Express JS",
       style: "shadow-purple-400",
     },
     {
@@ -57,6 +63,24 @@ const Skills = () => {
       src: cpp,
       title: "C++",
       style: "shadow-blue-300",
+    },
+    {
+      id: 8,
+      src: python,
+      title: "Python",
+      style: "shadow-purple-400",
+    },
+    {
+      id: 8,
+      src: sql,
+      title: "SQL",
+      style: "shadow-purple-400",
+    },
+    {
+      id: 9,
+      src: mongo,
+      title: "MongoDB",
+      style: "shadow-blue-400",
     },
   ];
   return (

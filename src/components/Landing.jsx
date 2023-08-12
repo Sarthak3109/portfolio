@@ -37,9 +37,9 @@ const Landing = ({ setSelectedPage }) => {
                     }}
                 >
                     <p className="text-6xl font-playfair z-10 text-center md:text-start">
-                        Shadab {""}
+                        Sarthak {""}
                         <span className="text-navy-blue font-semibold ">
-                            Ali
+                            Goel
                         </span>
                     </p>
 

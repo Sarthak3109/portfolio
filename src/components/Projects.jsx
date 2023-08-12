@@ -1,49 +1,52 @@
 import Linegradient from "./Linegradient";
 import { motion } from "framer-motion";
-import KeepIT from "../assets/KeepIT.png";
-import PG from "../assets/Pg.png";
+import food from "../assets/food.png"
 import WeatherApp from "../assets/weather.png";
-import OldPortfolio from "../assets/oldprt.png";
-import PokePic from "../assets/PokePic.png"
-import { FaExternalLinkAlt } from "react-icons/fa";
-import { RiGithubFill } from "react-icons/ri";
-
+import imdb from "../assets/imdb.jpg"
+import sudoku from "../assets/sudoku.png"
+import ecommerce from  "../assets/e-commerce.jpg"
+import project from "../assets/project.jpg"
 const Projects = () => {
   const projects = [
     {
-      id: 1,
-      src: KeepIT,
-      title: "KeepIT",
-      demo: "https://sh-google-keep-clone.netlify.app",
-      code: "https://github.com/Sh4dab/Google-Keep-Clone",
+      id:1,
+      src: ecommerce ,
+      title: "Shop Karo",
+      demo: "https://proud-plum-ladybug.cyclic.app/",
+
     },
     {
+       id: 4,
+       src: food,
+       title: "Fast Eat",
+       demo: "https://soft-buttercream-236618.netlify.app/",
+     },
+    
+    {
       id: 2,
-      src: WeatherApp,
-      title: "Weather App",
-      demo: "https://sh4dab.github.io/WeatherApp.github.io/",
-      code: "https://github.com/Sh4dab/WeatherApp.github.io",
+      src: project ,
+      title: "Project Vault", 
+      demo: "https://project-vault-umber.vercel.app/",
+
     },
     {
       id: 3,
-      src: PG,
-      title: "Password Generator",
-      demo: "https://sh4dab.github.io/Password-Generator/",
-      code: "https://github.com/Sh4dab/Password-Generator",
-    },
-    {
-      id: 4,
-      src: OldPortfolio,
-      title: "Portfolio 1.0",
-      demo: "https://sh4dab.github.io/portfolio/",
-      code: "https://github.com/Sh4dab/portfolio",
+      src: WeatherApp,
+      title: "Weather App",
+      demo: "https://weather-app-snowy-chi-93.vercel.app/",
     },
     {
       id: 5,
-      src: PokePic,
-      title: "PokePic",
-      demo: "https://sh4dab.github.io/PokePic/",
-      code: "https://github.com/Sh4dab/PokePic",
+      src: imdb,
+      title: "IMDB CLONE",
+      demo: "https://movies-for-all.onrender.com/",
+    },
+    {
+      id: 6,
+      src: sudoku ,
+      title: "Sudoku Solver",
+      demo: "https://sarthak3109.github.io/Sudoku-Solver/",
+
     },
   ];
   return (
@@ -82,6 +85,8 @@ const Projects = () => {
               hidden: { opacity: 0, y: 50 },
               visible: { opacity: 1, y: 0 },
             }}
+            style = {{cursor : "pointer"}}
+            onClick={()=>{window.location.href = project.demo}}
           >
             <div key={project.id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
@@ -90,20 +95,6 @@ const Projects = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <p className="flex items-center justify-center text-2xl pt-5 font-playfair font-semibold">{project.title}</p>
-              <div className="flex items-center justify-center">
-                <a className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105" 
-                  target="_blank"
-                  rel="noreferrer"
-                  href={project.demo}>
-                  Demo <FaExternalLinkAlt className="inline"/>
-                </a>
-                <a className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 "
-                  target="_blank"
-                  rel="noreferrer"
-                  href={project.code}>
-                  Code <RiGithubFill size={25} className="inline"/>
-                </a>
-              </div>
             </div>
           </motion.div>
           ))}

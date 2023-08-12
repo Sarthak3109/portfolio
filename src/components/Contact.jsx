@@ -5,7 +5,8 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 py-20"
+      className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 py-20 "
+      style = {{marginTop : "3rem"}}
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
       <motion.div
@@ -19,7 +20,7 @@ const Contact = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <div className="pb-8">
+        <div className="pb-8 flex justify-center items-center flex-col ">
           <p className="font-playfair font-semibold text-6xl text-start inline text-navy-blue">
             Contact
           </p>
