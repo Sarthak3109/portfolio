@@ -54,7 +54,7 @@ export default function Navbar({ isTopOfPage, selectedPage, setSelectedPage }) {
                     </div>
                 ) : (
                     <div className={`flex items-center justify-between mx-auto w-5/6`}>
-                        <h4 className={`font-playfair text-3xl font-bold`}><span className="text-navy-blue">sнα∂αв</span> αℓι</h4>
+                        <h4 className={`font-playfair text-3xl font-bold`}><span className="text-navy-blue">SARTHAK</span> GOEL</h4>
                         <button
                             className="rounded-full bg-navy-blue p-2 "
                             onClick={() => setIsMenuToggled(!isMenuToggled)}
